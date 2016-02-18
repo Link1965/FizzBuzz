@@ -1,19 +1,19 @@
 $(document).ready(function() {
 for (var i = 1; i < 101; i++) {
 	if ((i % 3 === 0) && (i % 5 === 0)) {
-		print("FizzBuzz")
+		$("#Integer-list").append("<li>FizzBuzz</li>");
 	}
 
 	else if (i % 3 === 0) {
-		print("Fizz")
+		$("#Integer-list").append("<li>Fizz</li>");
 	}
 
 	else if (i % 5 === 0) {
-		print("Buzz")
+		$("#Integer-list").append("<li>Buzz</li>");
 	}
 
 	else {
-		print(i)
+		$("#Integer-list").append("<li>" + i + "</li>");
 	}
 
 }
