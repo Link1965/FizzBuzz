@@ -1,5 +1,10 @@
 $(document).ready(function() {
-for (var i = 1; i < 101; i++) {
+var userInput = prompt("Please enter a number");
+	userInput = parseInt(userInput);
+	userInput = +userInput;
+	Math.floor(userInput) == userInput;
+
+for (var i = 1; i <=userInput; i++) {
 	if ((i % 3 === 0) && (i % 5 === 0)) {
 		$("#Integer-list").append("<div>FizzBuzz</div>");
 	}
